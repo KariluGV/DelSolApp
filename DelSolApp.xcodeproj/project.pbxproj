@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B0C75252784A9FA003C88F3 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C75242784A9FA003C88F3 /* TextFieldExtension.swift */; };
+		2B0C7529278667B6003C88F3 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C7527278667B6003C88F3 /* LoginTableViewCell.swift */; };
+		2B0C752A278667B6003C88F3 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C7528278667B6003C88F3 /* LoginTableViewCell.xib */; };
+		2B0D163F277BCD46001D6C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D163E277BCD46001D6C7A /* AppDelegate.swift */; };
+		2B0D1641277BCD46001D6C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D1640277BCD46001D6C7A /* SceneDelegate.swift */; };
+		2B0D1657277BCD61001D6C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D1654277BCD61001D6C7A /* Assets.xcassets */; };
+		2B0D1658277BCD61001D6C7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D1656277BCD61001D6C7A /* Colors.xcassets */; };
+		2B0D1664277BCD81001D6C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D165E277BCD81001D6C7A /* ViewController.swift */; };
+		2B0D1665277BCD81001D6C7A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D165F277BCD81001D6C7A /* Login.swift */; };
+		2B0D1666277BCD81001D6C7A /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D1660277BCD81001D6C7A /* Login.xib */; };
+		2B0D1669277BF111001D6C7A /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D1668277BF111001D6C7A /* Shadow.swift */; };
+		2B0D166E277C2439001D6C7A /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D166C277C2439001D6C7A /* ForgetPasswordViewController.swift */; };
+		2B0D166F277C2439001D6C7A /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D166D277C2439001D6C7A /* ForgetPasswordViewController.xib */; };
+		2B0D167A277CC9D9001D6C7A /* SendCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D1678277CC9D9001D6C7A /* SendCode.swift */; };
+		2B0D167B277CC9D9001D6C7A /* SendCode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D1679277CC9D9001D6C7A /* SendCode.xib */; };
+		2B8E434C277D2410003D08E1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E434A277D2410003D08E1 /* RegisterViewController.swift */; };
+		2B8E434D277D2410003D08E1 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8E434B277D2410003D08E1 /* RegisterViewController.xib */; };
+		2BD02C10278243F800E15A25 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C05278243F800E15A25 /* OpenSans-SemiBold.ttf */; };
+		2BD02C11278243F800E15A25 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C06278243F800E15A25 /* OpenSans-Light.ttf */; };
+		2BD02C12278243F800E15A25 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C07278243F800E15A25 /* OpenSans-ExtraBold.ttf */; };
+		2BD02C13278243F800E15A25 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C08278243F800E15A25 /* OpenSans-LightItalic.ttf */; };
+		2BD02C14278243F800E15A25 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C09278243F800E15A25 /* OpenSans-Bold.ttf */; };
+		2BD02C15278243F800E15A25 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C0A278243F800E15A25 /* OpenSans-SemiBoldItalic.ttf */; };
+		2BD02C16278243F800E15A25 /* OpenSans-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C0B278243F800E15A25 /* OpenSans-RegularItalic.ttf */; };
+		2BD02C17278243F800E15A25 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C0C278243F800E15A25 /* OpenSans-ExtraBoldItalic.ttf */; };
+		2BD02C18278243F800E15A25 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C0D278243F800E15A25 /* LICENSE.txt */; };
+		2BD02C19278243F800E15A25 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C0E278243F800E15A25 /* OpenSans-Regular.ttf */; };
+		2BD02C1A278243F800E15A25 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C0F278243F800E15A25 /* OpenSans-BoldItalic.ttf */; };
+		2BD02C3E2782A77C00E15A25 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD02C3C2782A77C00E15A25 /* TableViewCell.swift */; };
+		2BD02C3F2782A77C00E15A25 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD02C3D2782A77C00E15A25 /* TableViewCell.xib */; };
+		FC8A004D8AD55D08A3F929C4 /* Pods_DelSolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1140D65138290FE7E0A513A9 /* Pods_DelSolApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1140D65138290FE7E0A513A9 /* Pods_DelSolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DelSolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27530104A26084D0D49302B6 /* Pods-DelSolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelSolApp.debug.xcconfig"; path = "Target Support Files/Pods-DelSolApp/Pods-DelSolApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2B0C75242784A9FA003C88F3 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		2B0C7527278667B6003C88F3 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		2B0C7528278667B6003C88F3 /* LoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTableViewCell.xib; sourceTree = "<group>"; };
+		2B0D163B277BCD46001D6C7A /* DelSolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelSolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0D163E277BCD46001D6C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B0D1640277BCD46001D6C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B0D164C277BCD49001D6C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B0D1654277BCD61001D6C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B0D1656277BCD61001D6C7A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2B0D165E277BCD81001D6C7A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B0D165F277BCD81001D6C7A /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		2B0D1660277BCD81001D6C7A /* Login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		2B0D1668277BF111001D6C7A /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		2B0D166C277C2439001D6C7A /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		2B0D166D277C2439001D6C7A /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		2B0D1678277CC9D9001D6C7A /* SendCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCode.swift; sourceTree = "<group>"; };
+		2B0D1679277CC9D9001D6C7A /* SendCode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendCode.xib; sourceTree = "<group>"; };
+		2B8E434A277D2410003D08E1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2B8E434B277D2410003D08E1 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		2BD02C05278243F800E15A25 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		2BD02C06278243F800E15A25 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		2BD02C07278243F800E15A25 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2BD02C08278243F800E15A25 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		2BD02C09278243F800E15A25 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		2BD02C0A278243F800E15A25 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		2BD02C0B278243F800E15A25 /* OpenSans-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-RegularItalic.ttf"; sourceTree = "<group>"; };
+		2BD02C0C278243F800E15A25 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		2BD02C0D278243F800E15A25 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		2BD02C0E278243F800E15A25 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		2BD02C0F278243F800E15A25 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2BD02C3C2782A77C00E15A25 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2BD02C3D2782A77C00E15A25 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		E242853DF5F1811605415557 /* Pods-DelSolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelSolApp.release.xcconfig"; path = "Target Support Files/Pods-DelSolApp/Pods-DelSolApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B0D1638277BCD46001D6C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8A004D8AD55D08A3F929C4 /* Pods_DelSolApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B0C75262785C17F003C88F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B0C75242784A9FA003C88F3 /* TextFieldExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2B0D1632277BCD46001D6C7A = {
+			isa = PBXGroup;
+			children = (
+				2B0D163D277BCD46001D6C7A /* DelSolApp */,
+				2B0D163C277BCD46001D6C7A /* Products */,
+				AA52DCE4F50D2A6C66B149C0 /* Pods */,
+				D6A5C76B88D27F853B6F9B04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B0D163C277BCD46001D6C7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D163B277BCD46001D6C7A /* DelSolApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B0D163D277BCD46001D6C7A /* DelSolApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D1667277BF0B0001D6C7A /* Extensions */,
+				2B0D1659277BCD81001D6C7A /* Aplication */,
+				2B0D1652277BCD61001D6C7A /* Resources */,
+				2B0D163E277BCD46001D6C7A /* AppDelegate.swift */,
+				2B0D1640277BCD46001D6C7A /* SceneDelegate.swift */,
+				2B0D164C277BCD49001D6C7A /* Info.plist */,
+			);
+			path = DelSolApp;
+			sourceTree = "<group>";
+		};
+		2B0D1652277BCD61001D6C7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B0C75262785C17F003C88F3 /* Extension */,
+				2BD02C03278243F800E15A25 /* Fonts */,
+				2B0D1653277BCD61001D6C7A /* Images */,
+				2B0D1655277BCD61001D6C7A /* Colors */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B0D1653277BCD61001D6C7A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D1654277BCD61001D6C7A /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2B0D1655277BCD61001D6C7A /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D1656277BCD61001D6C7A /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		2B0D1659277BCD81001D6C7A /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D165A277BCD81001D6C7A /* Main */,
+				2B0D1661277BCD81001D6C7A /* Authentication */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		2B0D165A277BCD81001D6C7A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D165B277BCD81001D6C7A /* Transactions */,
+				2B0D165C277BCD81001D6C7A /* Profile */,
+				2B0D165D277BCD81001D6C7A /* Main */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2B0D165B277BCD81001D6C7A /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		2B0D165C277BCD81001D6C7A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2B0D165D277BCD81001D6C7A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2BD02C3B2782A74200E15A25 /* Cell */,
+				2B0D165E277BCD81001D6C7A /* ViewController.swift */,
+				2B0D165F277BCD81001D6C7A /* Login.swift */,
+				2B0D1660277BCD81001D6C7A /* Login.xib */,
+				2B0D166C277C2439001D6C7A /* ForgetPasswordViewController.swift */,
+				2B0D166D277C2439001D6C7A /* ForgetPasswordViewController.xib */,
+				2B0D1678277CC9D9001D6C7A /* SendCode.swift */,
+				2B0D1679277CC9D9001D6C7A /* SendCode.xib */,
+				2B8E434A277D2410003D08E1 /* RegisterViewController.swift */,
+				2B8E434B277D2410003D08E1 /* RegisterViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2B0D1661277BCD81001D6C7A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D1662277BCD81001D6C7A /* Sing In */,
+				2B0D1663277BCD81001D6C7A /* OnBoarding */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2B0D1662277BCD81001D6C7A /* Sing In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sing In";
+			sourceTree = "<group>";
+		};
+		2B0D1663277BCD81001D6C7A /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		2B0D1667277BF0B0001D6C7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D1668277BF111001D6C7A /* Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2BD02C03278243F800E15A25 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2BD02C04278243F800E15A25 /* Open_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2BD02C04278243F800E15A25 /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				2BD02C05278243F800E15A25 /* OpenSans-SemiBold.ttf */,
+				2BD02C06278243F800E15A25 /* OpenSans-Light.ttf */,
+				2BD02C07278243F800E15A25 /* OpenSans-ExtraBold.ttf */,
+				2BD02C08278243F800E15A25 /* OpenSans-LightItalic.ttf */,
+				2BD02C09278243F800E15A25 /* OpenSans-Bold.ttf */,
+				2BD02C0A278243F800E15A25 /* OpenSans-SemiBoldItalic.ttf */,
+				2BD02C0B278243F800E15A25 /* OpenSans-RegularItalic.ttf */,
+				2BD02C0C278243F800E15A25 /* OpenSans-ExtraBoldItalic.ttf */,
+				2BD02C0D278243F800E15A25 /* LICENSE.txt */,
+				2BD02C0E278243F800E15A25 /* OpenSans-Regular.ttf */,
+				2BD02C0F278243F800E15A25 /* OpenSans-BoldItalic.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		2BD02C3B2782A74200E15A25 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2BD02C3C2782A77C00E15A25 /* TableViewCell.swift */,
+				2BD02C3D2782A77C00E15A25 /* TableViewCell.xib */,
+				2B0C7527278667B6003C88F3 /* LoginTableViewCell.swift */,
+				2B0C7528278667B6003C88F3 /* LoginTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AA52DCE4F50D2A6C66B149C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27530104A26084D0D49302B6 /* Pods-DelSolApp.debug.xcconfig */,
+				E242853DF5F1811605415557 /* Pods-DelSolApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6A5C76B88D27F853B6F9B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1140D65138290FE7E0A513A9 /* Pods_DelSolApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B0D163A277BCD46001D6C7A /* DelSolApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B0D164F277BCD49001D6C7A /* Build configuration list for PBXNativeTarget "DelSolApp" */;
+			buildPhases = (
+				77B2E00AAA530F07234DFFD5 /* [CP] Check Pods Manifest.lock */,
+				2B0D1637277BCD46001D6C7A /* Sources */,
+				2B0D1638277BCD46001D6C7A /* Frameworks */,
+				2B0D1639277BCD46001D6C7A /* Resources */,
+				D17B5E1C42284BB99692E21D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelSolApp;
+			productName = DelSolApp;
+			productReference = 2B0D163B277BCD46001D6C7A /* DelSolApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B0D1633277BCD46001D6C7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2B0D163A277BCD46001D6C7A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B0D1636277BCD46001D6C7A /* Build configuration list for PBXProject "DelSolApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B0D1632277BCD46001D6C7A;
+			productRefGroup = 2B0D163C277BCD46001D6C7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B0D163A277BCD46001D6C7A /* DelSolApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B0D1639277BCD46001D6C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD02C15278243F800E15A25 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				2BD02C17278243F800E15A25 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				2BD02C14278243F800E15A25 /* OpenSans-Bold.ttf in Resources */,
+				2BD02C18278243F800E15A25 /* LICENSE.txt in Resources */,
+				2B0D166F277C2439001D6C7A /* ForgetPasswordViewController.xib in Resources */,
+				2BD02C16278243F800E15A25 /* OpenSans-RegularItalic.ttf in Resources */,
+				2BD02C19278243F800E15A25 /* OpenSans-Regular.ttf in Resources */,
+				2B0C752A278667B6003C88F3 /* LoginTableViewCell.xib in Resources */,
+				2BD02C1A278243F800E15A25 /* OpenSans-BoldItalic.ttf in Resources */,
+				2B0D167B277CC9D9001D6C7A /* SendCode.xib in Resources */,
+				2BD02C12278243F800E15A25 /* OpenSans-ExtraBold.ttf in Resources */,
+				2BD02C11278243F800E15A25 /* OpenSans-Light.ttf in Resources */,
+				2BD02C13278243F800E15A25 /* OpenSans-LightItalic.ttf in Resources */,
+				2BD02C10278243F800E15A25 /* OpenSans-SemiBold.ttf in Resources */,
+				2BD02C3F2782A77C00E15A25 /* TableViewCell.xib in Resources */,
+				2B0D1658277BCD61001D6C7A /* Colors.xcassets in Resources */,
+				2B0D1657277BCD61001D6C7A /* Assets.xcassets in Resources */,
+				2B0D1666277BCD81001D6C7A /* Login.xib in Resources */,
+				2B8E434D277D2410003D08E1 /* RegisterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77B2E00AAA530F07234DFFD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DelSolApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17B5E1C42284BB99692E21D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DelSolApp/Pods-DelSolApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DelSolApp/Pods-DelSolApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DelSolApp/Pods-DelSolApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B0D1637277BCD46001D6C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0D1665277BCD81001D6C7A /* Login.swift in Sources */,
+				2B0D163F277BCD46001D6C7A /* AppDelegate.swift in Sources */,
+				2B0D1669277BF111001D6C7A /* Shadow.swift in Sources */,
+				2B0C75252784A9FA003C88F3 /* TextFieldExtension.swift in Sources */,
+				2BD02C3E2782A77C00E15A25 /* TableViewCell.swift in Sources */,
+				2B8E434C277D2410003D08E1 /* RegisterViewController.swift in Sources */,
+				2B0C7529278667B6003C88F3 /* LoginTableViewCell.swift in Sources */,
+				2B0D1664277BCD81001D6C7A /* ViewController.swift in Sources */,
+				2B0D167A277CC9D9001D6C7A /* SendCode.swift in Sources */,
+				2B0D166E277C2439001D6C7A /* ForgetPasswordViewController.swift in Sources */,
+				2B0D1641277BCD46001D6C7A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B0D164D277BCD49001D6C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B0D164E277BCD49001D6C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B0D1650277BCD49001D6C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27530104A26084D0D49302B6 /* Pods-DelSolApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J75G3S433;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DelSolApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DelSol.DelSolApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B0D1651277BCD49001D6C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E242853DF5F1811605415557 /* Pods-DelSolApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J75G3S433;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DelSolApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DelSol.DelSolApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B0D1636277BCD46001D6C7A /* Build configuration list for PBXProject "DelSolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0D164D277BCD49001D6C7A /* Debug */,
+				2B0D164E277BCD49001D6C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B0D164F277BCD49001D6C7A /* Build configuration list for PBXNativeTarget "DelSolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0D1650277BCD49001D6C7A /* Debug */,
+				2B0D1651277BCD49001D6C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B0D1633277BCD46001D6C7A /* Project object */;
+}
