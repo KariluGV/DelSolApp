@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Material
 
 class ForgetPasswordViewController: UIViewController {
     
-    @IBOutlet weak var Email: UITextField!
+    @IBOutlet weak var Email: TextField!
     @IBOutlet weak var incorrectEmail: UIView!
     @IBOutlet weak var sendCodeContinue: UIButton!
     @IBOutlet weak var notCount: UIButton!
@@ -25,7 +26,7 @@ class ForgetPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         incorrectEmail.isHidden = true
-        
+        Email.prepareStylesTextfields(color: .gray)
     }
     
     @objc func closeView(){

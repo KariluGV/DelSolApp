@@ -11,6 +11,7 @@ class RegisterViewController: UIViewController{
 
 
 @IBOutlet weak var closeWindows: UIButton!
+    
 
     @IBOutlet weak var registerTableView: UITableView!
     

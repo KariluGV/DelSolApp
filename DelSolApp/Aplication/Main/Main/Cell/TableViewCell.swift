@@ -32,6 +32,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var continueRegistration: UIButton!
     @IBOutlet weak var labelWomen: UILabel!
     @IBOutlet weak var labelMen: UILabel!
+    @IBOutlet weak var conditionsAndPrivacyRegister: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,11 +43,11 @@ class TableViewCell: UITableViewCell {
         obligatoryFieldEmail.isHidden = true
         obligatoryFieldPassword.isHidden = true
         obligatoryFieldConfirPassword.isHidden = true
-        //        textFieldDidBeginEditing(textField: Names)
-        //        textFieldDidBeginEditing(textField: lastName)
-        //        textFieldDidBeginEditing(textField: emailRegister)
-        //        textFieldDidBeginEditing(textField: passwordRegister)
-        //        textFieldDidBeginEditing(textField: confirmPassword)
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
+        let underlineAttributedString = NSAttributedString(string: "Condiciones y Privacidad", attributes: underlineAttribute)
+        conditionsAndPrivacyRegister.attributedText = underlineAttributedString
+
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

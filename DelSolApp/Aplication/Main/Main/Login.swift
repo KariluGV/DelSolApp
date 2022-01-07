@@ -10,18 +10,10 @@ import UIKit
 class Login: UIViewController {
     
     @IBOutlet weak var loginTableView: UITableView!
+    @IBOutlet weak var conditionsAndPrivacyLogin: UILabel!
+
     
     static let identifier = "Login"
-    
-//    @IBOutlet weak var emailButton: UITextField!
-//    @IBOutlet weak var pasword: UITextField!
-//    @IBOutlet weak var forgetPasword: UIButton!
-//    @IBOutlet weak var continueButton: UIButton!
-//    @IBOutlet weak var continueInvited: UIButton!
-//    @IBOutlet weak var createAcount: UIButton!
-//    @IBOutlet weak var warningMessage: UIView!
-//    @IBOutlet weak var eyePasswordLogin: UIButton!
-    
     
     let testEmail = "ejemplo@correo.com"
     let testPasword = "pasword"
@@ -32,42 +24,17 @@ class Login: UIViewController {
         loginTableView.delegate = self
         loginTableView.dataSource = self
         loginTableView.register(UINib(nibName: LoginTableViewCell.identifer, bundle: nil), forCellReuseIdentifier: LoginTableViewCell.identifer)
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
+        let underlineAttributedString = NSAttributedString(string: "Condiciones y Privacidad", attributes: underlineAttribute)
+        conditionsAndPrivacyLogin.attributedText = underlineAttributedString
     }
     
-//    func setBorder(){
-//        warningMessage.clipsToBounds = true
-//        warningMessage.layer.cornerRadius = CGFloat (10)
-//        warningMessage.layer.borderColor = UIColor.red.cgColor
-//        warningMessage.layer.borderWidth = 1
-//    }
-    
-    @IBAction private func onClickGoToForgetPasword(_ sender: Any) {
-        let vc = ForgetPasswordViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
-    }
-    
-//    @IBAction func onClickContinue(_ sender: Any) {
-//        if emailButton.text == testEmail && pasword.text == testPasword {
-//            DispatchQueue.main.async {
-//                self.warningMessage.isHidden = true
-//            }
-//        } else {
-//            DispatchQueue.main.async {
-//                self.warningMessage.isHidden = false
-//            }
-//        }
-//    }
-    
+
     @IBAction func onClickGoToRegister(_ sender: Any) {
         let vc = RegisterViewController()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
-    
-//    @IBAction func ShowAndHidePasswordLogin(_ sender: Any) {
-//        pasword.isSecureTextEntry = !pasword.isSecureTextEntry ? true : false
-//    }
 }
 
 extension Login: UITableViewDelegate, UITableViewDataSource {
